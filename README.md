@@ -1,37 +1,17 @@
 # StockAnalysisSystemData
-
+  
 #### 介绍
-StockAnalysisSystem的离线数据
-
-#### 软件架构
-软件架构说明
-
-
+StockAnalysisSystem的离线数据  
+  
 #### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
+  
+1.  下载或clone本项目到本地并解压
+2.  获取并运行StockAnalysisSystem: https://gitee.com/SleepySoft/StockAnalysisSystem  
+3.  如果软件从未被配置过，则会自动弹出配置窗口；如果不是，则从是界面上方菜单中选择：Config->系统配置  
+4.  在配置窗口中点击Browse按钮正确配置MongoDB bin的路径（本人电脑中的路径是：C:\Program Files\MongoDB\Server\4.0\bin）  
+5.  点击Import按钮，选择刚解压的文件夹，程序将会自动导入离线数据到本地的MongoDB数据库中  
+  
 #### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 码云特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5.  码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+  
+1.  数据由mongodump导出，并使用mongorestore导入；用户也可以通过MongoDB的客户端软件自行导入
+2.  数据库建议使用默认的端口，并且不设置密码，否则可能导入不成功
